@@ -33,6 +33,7 @@ group :development do
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # 1-11-17:
+# gem 'thor', '0.19.1' # temporary fix http://stackoverflow.com/a/41035588/247626
 gem 'simple_form', '~> 3.4'
 gem 'client_side_validations',
   github: 'DavyJonesLocker/client_side_validations',

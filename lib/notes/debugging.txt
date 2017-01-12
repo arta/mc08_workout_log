@@ -1,0 +1,12 @@
+################################################################################
+# 1-11-17: #####################################################################
+• ISSUE (WHAT WHEN): warning message after $ rails g model|controller ...
+  > Running via Spring preloader in process 24505
+  > Expected string default value for '--jbuilder'; got true (boolean)
+  > ...
+
+• BUG & SOLUTION:
+  http://stackoverflow.com/a/41035588/247626
+  gem 'thor', '0.19.1'
+  $ bundle update thor
+################################################################################
