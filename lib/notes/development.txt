@@ -1,5 +1,28 @@
 ################################################################################
 # 1-11-17: #####################################################################
+################################################################################
+• Install client side validation (simple_form doesn't have it, but does not use
+  the one provided by Rails 5, and I want to see how it works):
+  http://stackoverflow.com/a/39656248/247626
+  : gem 'client_side_validations',
+      github: 'DavyJonesLocker/client_side_validations',
+      branch: 'rails5'
+
+    $ rails g client_side_validations:install
+
+    application.js:
+    //= require rails.validations
+
+  : gem 'client_side_validations-simple_form',
+      github: 'DavyJonesLocker/client_side_validations-simple_form',
+      branch: 'rails5'
+
+    application.js:
+    //= require rails.validations.simple_form
+
+  : Usage:
+      = simple_form_for @book, validate: true do |book|
+################################################################################
 • gem 'simple_form' .. and:
   $ rails g simple_form:install --bootstrap
 
