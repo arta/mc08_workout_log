@@ -1,0 +1,5 @@
+%p
+  = "#{exercise.name}, sets: #{exercise.sets}, reps: #{exercise.reps}"
+  =link_to 'Destroy', [@workout, exercise], method: :delete, data:{ confirm:'Are you sure?' }
+
+%hr

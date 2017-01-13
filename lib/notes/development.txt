@@ -1,4 +1,20 @@
 ################################################################################
+# 1-13-17: #####################################################################
+• ISSUE: Resolving again form_for and list of nested resources on parent's show
+  page; exercises under workouts here.
+
+: GOAL:
+  1) don't save empty,
+  2) don't show .invalid? in the nested list
+
+: Dirty SOLUTION: reapplying simple cheat that "works":
+  1) Exercise :: validates :name, presence:true
+  2) ExercisesController :: create :: simply don't save (no render with errors)
+################################################################################
+
+
+
+################################################################################
 # 1-12-17: #####################################################################
 ################################################################################
 • Strong params:

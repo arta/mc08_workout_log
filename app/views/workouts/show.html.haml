@@ -4,6 +4,15 @@
   %p= @workout.length
   %p= @workout.mood
 
-=link_to 'Back', workouts_path
-=link_to 'Edit', [:edit, @workout]
-=link_to 'Destroy', @workout, method: :delete, data:{ confirm:'Are you sure?' }
+#exercises
+  %h2 Exercises
+  =render @workout.exercises
+
+#new_exercise
+  %h3 Add Exercise
+  =render '/exercises/form'
+
+#links
+  =link_to 'Back', workouts_path
+  =link_to 'Edit', [:edit, @workout]
+  =link_to 'Destroy', @workout, method: :delete, data:{ confirm:'Are you sure?' }
