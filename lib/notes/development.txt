@@ -1,5 +1,12 @@
 ################################################################################
-# 1-11-17: #####################################################################
+# 1-12-17: #####################################################################
+################################################################################
+• Strong params:
+: Are these equivalent?
+
+    params.require( :exercise ).permit( :name, .. )
+    params[:exercise].permit( :name, .. )
+################################################################################
 • Troubles implementing bootstrap 'form-horizontal'. Seems too complicated.
   Aborting; unimportant now.
   http://getbootstrap.com/css/#forms-horizontal
