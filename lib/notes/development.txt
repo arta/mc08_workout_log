@@ -1,5 +1,15 @@
 ################################################################################
 # 1-11-17: #####################################################################
+• Troubles implementing bootstrap 'form-horizontal'. Seems too complicated.
+  Aborting; unimportant now.
+  http://getbootstrap.com/css/#forms-horizontal
+  http://stackoverflow.com/a/12590379/247626
+################################################################################
+
+
+
+################################################################################
+# 1-11-17: #####################################################################
 ################################################################################
 • Install client side validation (simple_form doesn't have it, but does not use
   the one provided by Rails 5, and I want to see how it works):

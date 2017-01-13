@@ -1,0 +1,9 @@
+#workout
+  %p= @workout.workout
+  %p= @workout.date
+  %p= @workout.length
+  %p= @workout.mood
+
+=link_to 'Back', workouts_path
+=link_to 'Edit', [:edit, @workout]
+=link_to 'Destroy', @workout, method: :delete, data:{ confirm:'Are you sure?' }
