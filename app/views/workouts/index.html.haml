@@ -1,5 +1,5 @@
 -@workouts.each do |workout|
-  %h2= link_to workout.date, workout
+  %h2= link_to workout.date.strftime( "%A %b %d" ), workout
   %h3= workout.workout
   =link_to 'Edit', [:edit, workout]
   =link_to 'Delete', workout, method: :delete, data:{ confirm:'Are you sure?' }
