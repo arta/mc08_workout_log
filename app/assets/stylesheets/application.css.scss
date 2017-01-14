@@ -14,6 +14,51 @@
  *= require_self
  */
 
- // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
- @import "bootstrap-sprockets";
- @import "bootstrap";
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  // http://uigradients.com
+  background: #fd746c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #fd746c , #ff9068); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #fd746c , #ff9068); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+// override/tweak bootstrap
+.navbar-default {
+  // http://css3generator.com/
+  background: rgba( 250, 250, 250, 0.5 ); // white with 50% opacity
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+  border: none;
+  border-radius: 0;
+  .navbar-brand {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  .navbar-brand:hover { color: #a94442; }
+  .navbar-nav > li > a { color: #a94442; }
+  .navbar-nav > li > a:hover { color: white; }
+ }
+
+
+#index-workouts {
+  h2 {
+    margin-bottom: 0;
+    font-weight: 100;
+    a { color: white; }
+  }
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    span { color: #a94442; }
+  }
+  a { color: white; }
+}
+
+.container {
+  a { color: white; }
+}
