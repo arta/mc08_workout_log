@@ -6,7 +6,7 @@
 
 #exercises
   %h2 Exercises
-  =render @workout.exercises
+  =render @workout.exercises.reject( &:new_record? )
 
 #new_exercise
   %h3 Add Exercise

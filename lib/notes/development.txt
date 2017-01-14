@@ -10,6 +10,9 @@
 : Dirty SOLUTION: reapplying simple cheat that "works":
   1) Exercise :: validates :name, presence:true
   2) ExercisesController :: create :: simply don't save (no render with errors)
+
+: Clean SOLUTION: full validation as usual. Is this the Rail's way, though?
+  See note in WorkoutsController :: show 
 ################################################################################
 
 

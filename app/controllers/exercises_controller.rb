@@ -6,7 +6,11 @@ class ExercisesController < ApplicationController
   def create
     @workout = Workout.find params[:workout_id]
     @exercise = @workout.exercises.create exercise_params
-    redirect_to @workout, notice:'Exercise added.'
+    if @exercise.save
+      redirect_to @workout, notice:'Exercise added.'
+    else
+      render 'workouts/show'
+    end
   end
   # No view. Explicitly redirect_to|render action|view
 

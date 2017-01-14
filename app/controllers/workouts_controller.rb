@@ -40,6 +40,10 @@ class WorkoutsController < ApplicationController
   #   browse to the website.com/workouts/:id
   #   router extracts :id value from the request into params[:id]=value pair
   def show
+    # Enable @exercise error messages on /exercises/_form:
+    #   (@workout.exercises.new in `=form_for [@workout, @workout.exercises.new]`
+    #   spawns a new Ruby object with each render with no errors on it)
+    @exercise = @workout.exercises.new
   end
   # Automatically renders /workouts/show view with the identified @workout
 
